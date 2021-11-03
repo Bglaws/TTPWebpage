@@ -24,7 +24,7 @@
 		<script>
 			function updateClock() {
 				let date = new Date();
-				let time = 'Current date and time : ' + date.getHours() + ':' + date.getMinutes() + ':' +date.getSeconds();
+				let time = 'Current date and time : ' + (date.getHours() - 12) + ':' + date.getMinutes() + ':' +date.getSeconds();
 				setTimeout(updateClock, 1000);
 
 				document.getElementById('time').innerHTML = [time];
